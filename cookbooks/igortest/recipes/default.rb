@@ -18,7 +18,7 @@ end
 template "/etc/ntp.conf" do
 	source "ntp.conf.erb"
 	variables( :ntp_server => "time.nist.gov" )
-	notifiers :restart, "service[ntpd]"
+	notifies :restart, "service[ntpd]"
 end
 
 service "ntpd" do
