@@ -1,0 +1,30 @@
+{
+  "conflicting": {
+  },
+  "recommendations": {
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "attributes": {
+  },
+  "providing": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "name": "igortest",
+  "license": "All rights reserved",
+  "groupings": {
+  },
+  "suggestions": {
+  },
+  "version": "0.1.0",
+  "dependencies": {
+  },
+  "platforms": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "description": "Installs/Configures igortest",
+  "recipes": {
+    "igortest::default": "Prints hello world output"
+  },
+  "replacing": {
+  }
+}
