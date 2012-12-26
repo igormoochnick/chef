@@ -8,10 +8,11 @@
 #
 
 rightscale_marker :begin
+
 log "Hello World! You should try Chef with RightScale!"
 
 package "ntp" do
-	ation [:install]
+	action [:install]
 end
 
 template "/etc/ntp.conf" do
