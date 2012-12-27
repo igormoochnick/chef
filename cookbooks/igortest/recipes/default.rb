@@ -34,4 +34,18 @@ user "random" do
   password "$1$JJsvHslV$szsCjVEroftprNn4JHtDi."
 end
 
+username = 'dev'
+
+ssh_keys = node[:ssh_access].map do |f|
+	File.read("/tmp/chef-solo/ssh_keys/#{f}")
+end
+
+template "/home/#{username}/.ssh/authorised_keys" do
+	source "authorized_keys.erb"
+	owner username
+	group ;users'
+	mode "0600"
+	variable :ssh_keys => ssh_keys
+end
+
 rightscale_marker :end

@@ -1,32 +1,32 @@
 {
-  "version": "0.1.0",
-  "attributes": {
-  },
-  "suggestions": {
+  "groupings": {
   },
   "recommendations": {
   },
-  "dependencies": {
-    "app": ">= 0.0.0",
-    "rightscale": ">= 0.0.0"
-  },
   "license": "All rights reserved",
+  "name": "igortest",
+  "conflicting": {
+  },
+  "attributes": {
+  },
+  "version": "0.1.0",
   "providing": {
   },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "maintainer_email": "igor@percipiomedia.com",
-  "recipes": {
-    "igortest::default": "Prints hello world output"
-  },
-  "groupings": {
+  "maintainer": "Percipio Media",
+  "description": "Installs/Configures igortest",
+  "dependencies": {
+    "rightscale": ">= 0.0.0",
+    "app": ">= 0.0.0"
   },
   "platforms": {
   },
-  "maintainer": "Percipio Media",
-  "conflicting": {
+  "recipes": {
+    "igortest::default": "Prints hello world output"
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "description": "Installs/Configures igortest",
   "replacing": {
   },
-  "name": "igortest"
+  "suggestions": {
+  }
 }
