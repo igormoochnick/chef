@@ -1,31 +1,32 @@
 {
-  "maintainer": "YOUR_COMPANY_NAME",
-  "description": "Installs/Configures igortest",
+  "maintainer_email": "igor@percipiomedia.com",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "recommendations": {
+  },
+  "license": "All rights reserved",
+  "maintainer": "Percipio Media",
   "conflicting": {
   },
-  "version": "0.1.0",
+  "platforms": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures igortest",
+  "name": "igortest",
+  "providing": {
+  },
+  "suggestions": {
+  },
   "recipes": {
     "igortest::default": "Prints hello world output"
   },
   "attributes": {
   },
-  "recommendations": {
-  },
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "maintainer_email": "YOUR_EMAIL",
   "groupings": {
   },
-  "replacing": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "name": "igortest",
-  "platforms": {
-  },
-  "providing": {
-  },
-  "suggestions": {
-  },
-  "license": "All rights reserved"
+  "version": "0.1.0",
+  "dependencies": {
+    "app": ">= 0.0.0",
+    "rightscale": ">= 0.0.0"
+  }
 }
