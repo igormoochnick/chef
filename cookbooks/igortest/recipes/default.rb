@@ -43,7 +43,7 @@ end
 template "/home/#{username}/.ssh/authorised_keys" do
 	source "authorized_keys.erb"
 	owner username
-	group ;users'
+	group 'users'
 	mode "0600"
 	variable :ssh_keys => ssh_keys
 end
