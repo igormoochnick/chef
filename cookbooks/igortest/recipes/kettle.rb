@@ -154,9 +154,8 @@ bash "configure_kettle" do
   user "root"
   cwd "#{homeDir}"
   code <<-EOH
-  	chown -R pentaho:users #{homeDir}/bin/
-  	echo 'export RS_SKETCHY='$RS_ATTACH_DIR >> #{homeDir}/setenv
   	tar -zxf #{tmpFolder}/kettle.tar.gz -C #{homeDir}/bin
+  	chown -R pentaho:users #{homeDir}/bin/
   EOH
   #creates "/home/pentaho/bin"
   #(cd program-#{node[:program][:version]}/ && ./configure && make && make install)
@@ -172,7 +171,11 @@ bash "copy_repos" do
 	EOH
 end
 
-cron "noop" do
+file "#{homeDir}/repos/sparkroom/sparkroom.sh" do
+  mode "755"
+end
+
+cron "cron_sparkroom" do
   hour "23"
   minute "5"
   user "pentaho"
