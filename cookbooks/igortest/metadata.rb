@@ -13,4 +13,6 @@ depends "app"
 depends "rightscale"
 
 recipe "igortest::default", "Prints hello world output"
+recipe "about_city::my_city","Information about my city"
+recipe "igortest::kettle", "Installs and configures Kettle server"
 

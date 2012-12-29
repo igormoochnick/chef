@@ -1,32 +1,34 @@
 {
-  "groupings": {
-  },
-  "recommendations": {
-  },
   "license": "All rights reserved",
-  "name": "igortest",
-  "conflicting": {
-  },
-  "attributes": {
-  },
-  "version": "0.1.0",
   "providing": {
   },
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "maintainer_email": "igor@percipiomedia.com",
-  "maintainer": "Percipio Media",
-  "description": "Installs/Configures igortest",
+  "recommendations": {
+  },
+  "name": "igortest",
+  "conflicting": {
+  },
+  "groupings": {
+  },
   "dependencies": {
-    "rightscale": ">= 0.0.0",
-    "app": ">= 0.0.0"
+    "app": ">= 0.0.0",
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer": "Percipio Media",
+  "attributes": {
+  },
+  "suggestions": {
   },
   "platforms": {
   },
   "recipes": {
+    "igortest::kettle": "Installs and configures Kettle server",
+    "about_city::my_city": "Information about my city",
     "igortest::default": "Prints hello world output"
   },
+  "description": "Installs/Configures igortest",
+  "version": "0.1.0",
+  "maintainer_email": "igor@percipiomedia.com",
   "replacing": {
-  },
-  "suggestions": {
   }
 }
